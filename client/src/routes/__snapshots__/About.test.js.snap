@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`with text and is disabled true 1`] = `
+<div
+  className="about"
+>
+  <div
+    className="col-sm-5 text-center container"
+    id="about-content"
+  >
+    <p>
+      This project is a collaborative effort from 
+      <a
+        href="https://github.com/bears-team-06"
+      >
+        Bears Team 6
+      </a>
+       of Chingu Beta Voyage.
+    </p>
+    <p>
+      Visit 
+      <a
+        href="https://chingu.io/"
+      >
+        Chingu Cohorts website
+      </a>
+       and join a supportive group of life-long learners.
+    </p>
+  </div>
+</div>
+`;
