@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import RecipeViewer from "../components/RecipeViewer";
 import {getRecipes} from "../services/request";
+import RecipeNavigator from "../components/RecipeNavigator";
 
 class RecipeApp extends Component {
     constructor(props) {
@@ -16,14 +17,21 @@ class RecipeApp extends Component {
             .then((recipes) => {
                 this.setState({
                     recipes,
-                    seclectedRecipe: 0
+                    seclectedRecipe: 3
                 })
             })
+    }
+
+    onRecipeSelect = (index) => {
+        this.setState({
+            seclectedRecipe: index
+        })
     }
 
     render() {
         return <div>
             <div>This is recipe app</div>
+            <RecipeNavigator recipes={this.state.recipes.map(recipe => recipe.name)} onClick={this.onRecipeSelect}/>
             <RecipeViewer {...this.state.recipes[this.state.seclectedRecipe]}/>
         </div>
     }
