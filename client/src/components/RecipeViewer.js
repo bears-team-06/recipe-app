@@ -18,7 +18,7 @@ const RecipeViewer = ({ id, ingredients, instructions, name }) => {
 
 const IngredientLists = ingredients => {
   if (ingredients && Array.isArray(ingredients)) {
-    return ingredients.map(ingredient => <li>{ingredient}</li>);
+    return ingredients.map(ingredient => <li key={ingredient.replace(" ","")}>{ingredient}</li>);
   }
 };
 

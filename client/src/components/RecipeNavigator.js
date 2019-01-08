@@ -2,7 +2,7 @@ import React from 'react'
 
 const RecipeList = ({ recipes, onClick }) => {
     if (recipes && Array.isArray(recipes)) {
-        return recipes.map((recipe,index) => <li onClick={() => onClick(index)}>{recipe}</li>);
+        return recipes.map((recipe,index) => <li key={recipe.replace(" ","")} onClick={() => onClick(index)}>{recipe}</li>);
     }
 }
 
