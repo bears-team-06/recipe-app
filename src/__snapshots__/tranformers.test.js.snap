@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transforms recipe object correctly 1`] = `
+Array [
+  Recipe {
+    "id": "52958",
+    "ingredients": Array [
+      "1 cup  Peanut Butter",
+      "1/2 cup  Sugar",
+      "1 Egg",
+    ],
+    "instructions": "Preheat oven to 350ºF (180ºC).
+In a large bowl, mix together the peanut butter, sugar, and egg.
+Scoop out a spoonful of dough and roll it into a ball. Place the cookie balls onto a nonstick baking sheet.
+For extra decoration and to make them cook more evenly, flatten the cookie balls by pressing a fork down on top of them, then press it down again at a 90º angle to make a criss-cross pattern.
+Bake for 8-10 minutes or until the bottom of the cookies are golden brown.
+Remove from baking sheet and cool.
+Enjoy!",
+    "name": "Peanut Butter Cookies",
+  },
+  Recipe {
+    "id": "52957",
+    "ingredients": Array [
+      "1 1/4 oz  Cream Cheese",
+      "1 1/4 cup Sugar",
+      "1 teaspoon Vanilla Extract",
+      "2 Flour",
+      "Puff Pastry",
+      "Strawberries",
+      "Raspberries",
+      "Blackberries",
+    ],
+    "instructions": "Preheat oven to 400ºF (200ºC), and prepare two cookie sheets with parchment paper. In a bowl, mix cream cheese, sugar, and vanilla until fully combined. Lightly flour the surface and roll out puff pastry on top to flatten. Cut each sheet of puff pastry into 9 equal squares. On the top right and bottom left of the pastry, cut an L shape approximately ½ inch (1 cm) from the edge.
+NOTE: This L shape should reach all the way down and across the square, however both L shapes should not meet at the ends. Your pastry should look like a picture frame with two corners still intact.
+Take the upper right corner and fold down towards the inner bottom corner. You will now have a diamond shape.
+Place 1 to 2 teaspoons of the cream cheese filling in the middle, then place berries on top.
+Repeat with the remaining pastry squares and place them onto the parchment covered baking sheet.
+Bake for 15-20 minutes or until pastry is golden brown and puffed.
+Enjoy!
+",
+    "name": "Fruit and Cream Cheese Breakfast Pastries",
+  },
+  Recipe {
+    "id": "52956",
+    "ingredients": Array [
+      "8 oz  Chicken",
+      "pinch Salt",
+      "pinch Pepper",
+      "1 tsp  Ginger Cordial",
+      "1 tsp  Ginger",
+      "1 tbs Spring Onions",
+      "1/2 cup  Rice",
+      "8 cups  Water",
+      "2 oz  Coriander",
+    ],
+    "instructions": "STEP 1 - MARINATING THE CHICKEN
+In a bowl, add chicken, salt, white pepper, ginger juice and then mix it together well.
+Set the chicken aside.
+STEP 2 - RINSE THE WHITE RICE
+Rinse the rice in a metal bowl or pot a couple times and then drain the water.
+STEP 2 - BOILING THE WHITE RICE
+Next add 8 cups of water and then set the stove on high heat until it is boiling. Once rice porridge starts to boil, set the stove on low heat and then stir it once every 8-10 minutes for around 20-25 minutes.
+After 25 minutes, this is optional but you can add a little bit more water to make rice porridge to make it less thick or to your preference.
+Next add the marinated chicken to the rice porridge and leave the stove on low heat for another 10 minutes.
+After an additional 10 minutes add the green onions, sliced ginger, 1 pinch of salt, 1 pinch of white pepper and stir for 10 seconds.
+Serve the rice porridge in a bowl
+Optional: add Coriander on top of the rice porridge.",
+    "name": "Chicken Congee",
+  },
+  Recipe {
+    "id": "52955",
+    "ingredients": Array [
+      "3 cups  Chicken Stock",
+      "1/4 tsp Salt",
+      "1/4 tsp Sugar",
+      "pinch Pepper",
+      "1 tsp  Sesame Seed Oil",
+      "1/3 cup Peas",
+      "1/3 cup Mushrooms",
+      "1 tbs Cornstarch",
+      "2 tbs Water",
+      "1/4 cup Spring Onions",
+    ],
+    "instructions": "In a wok add chicken broth and wait for it to boil.
+Next add salt, sugar, white pepper, sesame seed oil.
+When the chicken broth is boiling add the vegetables to the wok.
+To thicken the sauce, whisk together 1 Tablespoon of cornstarch and 2 Tablespoon of water in a bowl and slowly add to your soup until it's the right thickness.
+Next add 1 egg slightly beaten with a knife or fork and add it to the soup slowly and stir for 8 seconds
+Serve the soup in a bowl and add the green onions on top.",
+    "name": "Egg Drop Soup",
+  },
+  Recipe {
+    "id": "52954",
+    "ingredients": Array [
+      "1/3 cup Mushrooms",
+      "1/3 cup Wood Ear Mushrooms",
+      "2/3 Cup Tofu",
+      "1/2 cup  Pork",
+      "2-1/2 cups Chicken Stock",
+      "1/2 tsp Salt",
+      "1/4 tsp Sugar",
+      "1 tsp  Sesame Seed Oil",
+      "1/4 tsp Pepper",
+      "1/2 tsp Hotsauce",
+      "1-½ cups Vinegar",
+      "1 tsp  Soy Sauce",
+      "1 tbs Cornstarch",
+      "2 tbs Water",
+      "1/4 cup Spring Onions",
+    ],
+    "instructions": "STEP 1 - MAKING THE SOUP
+In a wok add chicken broth and wait for it to boil.
+Next add salt, sugar, sesame seed oil, white pepper, hot pepper sauce, vinegar and soy sauce and stir for few seconds.
+Add Tofu, mushrooms, black wood ear mushrooms to the wok.
+To thicken the sauce, whisk together 1 Tablespoon of cornstarch and 2 Tablespoon of water in a bowl and slowly add to your soup until it's the right thickness.
+Next add 1 egg slightly beaten with a knife or fork and add it to the soup and stir for 8 seconds
+Serve the soup in a bowl and add the bbq pork and sliced green onions on top.",
+    "name": "Hot and Sour Soup",
+  },
+  Recipe {
+    "id": "52953",
+    "ingredients": Array [
+      "1/2 bag Rice Stick Noodles",
+      "8 oz  Prawns",
+      "1/2  Egg",
+      "pinch Pepper",
+      "2 tsp Sesame Seed Oil",
+      "2 tbs Cornstarch",
+      "4 tbs Oil",
+      "1 tsp  Minced Garlic",
+      "1 tsp  Ginger",
+      "1/2 cup  Onion",
+      "1 cup  Bean Sprouts",
+      "1/2 cup  Spring Onions",
+      "1 tbs Cooking wine",
+      "1 tbs Oyster Sauce",
+      "1/2 tbs Sugar",
+      "1/2 tbs Vinegar",
+      "1 tbs Soy Sauce",
+    ],
+    "instructions": "STEP 1 - SOAK THE RICE NOODLES
+Soak the rice noodles overnight untill they are soft
+STEP 2 - BOIL THE RICE NOODLES
+Boil the noodles for 10-15 minutes and then rinse with cold water to stop the cooking process of the noodles.
+STEP 3 -MARINATING THE SHRIMP
+In a bowl add the shrimp, egg, 1 pinch of white pepper, 1 Teaspoon of sesame seed oil, 1 Tablespoon corn starch and 1 tablespoon of oil
+Mix together well
+STEP 4 - STIR FRY
+In a wok add 2 Tablespoons of oil, shrimp and stir fry them until it is golden brown
+Set the shrimp aside
+Add 1 Tablespoon of oil to the work and then add minced garlic, ginger and all of the vegetables.
+Add the noodles to the wok
+Next add sherry cooking wine, oyster sauce, sugar, vinegar, sesame seed oil, 1 pinch white pepper, and soy sauce
+Add back in the shrimp
+To thicken the sauce, whisk together 1 Tablespoon of corn starch and 2 Tablespoon of water in a bowl and slowly add to your stir-fry until it's the right thickness.",
+    "name": "Shrimp Chow Fun",
+  },
+  Recipe {
+    "id": "52952",
+    "ingredients": Array [
+      "1/2 lb Beef",
+      "pinch Salt",
+      "pinch Pepper",
+      "2 tsp Sesame Seed Oil",
+      "1/2  Egg",
+      "3 tbs Starch",
+      "5 tbs Oil",
+      "1/4 lb Noodles",
+      "1/2 cup  Onion",
+      "1 tsp  Minced Garlic",
+      "1 tsp  Ginger",
+      "1 cup  Bean Sprouts",
+      "1 cup  Mushrooms",
+      "1 cup  Water",
+      "1 tbs Oyster Sauce",
+      "1 tsp  Sugar",
+      "1 tsp  Soy Sauce",
+    ],
+    "instructions": "STEP 1 - MARINATING THE BEEF
+In a bowl, add the beef, salt, 1 pinch white pepper, 1 Teaspoon sesame seed oil, 1/2 egg, corn starch,1 Tablespoon of oil and mix together.
+STEP 2 - BOILING THE THE NOODLES
+In a 6 qt pot add your noodles to boiling water until the noodles are submerged and boil on high heat for 10 seconds. After your noodles is done boiling strain and cool with cold water.
+STEP 3 - STIR FRY
+Add 2 Tablespoons of oil, beef and cook on high heat untill beef is medium cooked.
+Set the cooked beef aside
+In a wok add 2 Tablespoon of oil, onions, minced garlic, minced ginger, bean sprouts, mushrooms, peapods and 1.5 cups of water or until the vegetables are submerged in water.
+Add the noodles to wok
+To make the sauce, add oyster sauce, 1 pinch white pepper, 1 teaspoon sesame seed oil, sugar, and 1 Teaspoon of soy sauce.
+Next add the beef to wok and stir-fry",
+    "name": "Beef Lo Mein",
+  },
+  Recipe {
+    "id": "52951",
+    "ingredients": Array [
+      "1 1/2  Chicken Breast",
+      "3/4 cup  Plain Flour",
+      "1 Egg",
+      "2 tbs Starch",
+      "1 tbs Baking Powder",
+      "1 tsp  Salt",
+      "1/2 tsp Onion Salt",
+      "1/4 tsp Garlic Powder",
+      "3/4 cup  Water",
+      "1/2 cup  Chicken Stock",
+      "1/4 cup Duck Sauce",
+      "3 tbs Soy Sauce",
+      "2 tbs Honey",
+      "1 tbs Rice Vinegar",
+      "2 tbs Sesame Seed Oil",
+      "1/2 tbs Gochujang",
+      "2 tbs Starch",
+      "1 clove Garlic",
+      "2 chopped Spring Onions",
+      "1 tsp  Ginger",
+    ],
+    "instructions": "DIRECTIONS:
+STEP 1 - SAUCE
+In a bowl, add 2 Cups of water, 2 Tablespoon soy sauce, 2 Tablespoon white vinegar, sherry cooking wine, 1/4 Teaspoon white pepper, minced ginger, minced garlic, hot pepper, ketchup, hoisin sauce, and sugar.
+Mix together well and set aside.
+STEP 2 - MARINATING THE CHICKEN
+In a bowl, add the chicken, 1 pinch of salt, 1 pinch of white pepper, 2 egg whites, and 3 Tablespoon of corn starch
+STEP 3 - DEEP FRY THE CHICKEN
+Deep fry the chicken at 350 degrees for 3-4 minutes or until it is golden brown and loosen up the chicken so that they don't stick together.
+Set the chicken aside.
+STEP 4 - STIR FRY
+Add the sauce to the wok and then the broccoli and wait until it is boiling.
+To thicken the sauce, whisk together 2 Tablespoon of cornstarch and 4 Tablespoon of water in a bowl and slowly add to your stir-fry until it's the right thickness.
+Next add in the chicken and stir-fry for a minute and serve on a plate",
+    "name": "General Tso's Chicken",
+  },
+  Recipe {
+    "id": "52950",
+    "ingredients": Array [
+      "1/2 lb Beef",
+      "1/2 tsp Salt",
+      "1 tsp  Sesame Seed Oil",
+      "1 pinch Pepper",
+      "1 Egg White",
+      "3 tbs Starch",
+      "4 tbs Oil",
+      "1 tsp  Ginger",
+      "1 tsp  Garlic",
+      "3/4 cup  Onion",
+      "1/2 cup  Carrots",
+      "3/4 cup  Green Pepper",
+      "1 cup  Celery",
+      "1 cup  Mushrooms",
+      "1 tbs Cooking wine",
+      "1 cup  Water",
+      "1 tbs Oyster Sauce",
+      "1/2 tsp Hotsauce",
+      "1 tsp  Sugar",
+      "1 tbs Soy Sauce",
+    ],
+    "instructions": "STEP 1 - MARINATING THE BEEF
+In a bowl, add the beef, salt, sesame seed oil, white pepper, egg white, 2 Tablespoon of corn starch and 1 Tablespoon of oil.
+STEP 2 - STIR FRY
+First Cook the beef by adding 2 Tablespoon of oil until the beef is golden brown.
+Set the beef aside
+In a wok add 1 Tablespoon of oil, minced ginger, minced garlic and stir-fry for few seconds.
+Next add all of the vegetables and then add sherry cooking wine and 1 cup of water.
+To make the sauce add oyster sauce, hot pepper sauce, and sugar.
+add the cooked beef and 1 spoon of soy sauce
+To thicken the sauce, whisk together 1 Tablespoon of cornstarch and 2 Tablespoon of water in a bowl and slowly add to your stir-fry until it's the right thickness.",
+    "name": "Szechuan Beef",
+  },
+  Recipe {
+    "id": "52949",
+    "ingredients": Array [
+      "200g Pork",
+      "1 Egg",
+      "Dash Water",
+      "1/2 tsp Salt",
+      "1 tsp  Sugar",
+      "10g Soy Sauce",
+      "10g Starch",
+      "30g Tomato Puree",
+      "10g Vinegar",
+      "Dash Coriander",
+    ],
+    "instructions": "Preparation
+1. Crack the egg into a bowl. Separate the egg white and yolk.
+
+Sweet and Sour Pork
+2. Slice the pork tenderloin into strips.
+
+3. Prepare the marinade using a pinch of salt, one teaspoon of starch, two teaspoons of light soy sauce, and an egg white.
+
+4. Marinade the pork strips for about 20 minutes.
+
+5. Put the remaining starch in a bowl. Add some water and vinegar to make a starchy sauce.
+
+Sweet and Sour Pork
+Cooking Instructions
+1. Pour the cooking oil into a wok and heat to 190°C (375°F). Add the marinated pork strips and fry them until they turn brown. Remove the cooked pork from the wok and place on a plate.
+
+2. Leave some oil in the wok. Put the tomato sauce and white sugar into the wok, and heat until the oil and sauce are fully combined.
+
+3. Add some water to the wok and thoroughly heat the sweet and sour sauce before adding the pork strips to it.
+
+4. Pour in the starchy sauce. Stir-fry all the ingredients until the pork and sauce are thoroughly mixed together.
+
+5. Serve on a plate and add some coriander for decoration.",
+    "name": "Sweet and Sour Pork",
+  },
+]
+`;
