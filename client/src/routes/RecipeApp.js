@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import RecipeViewer from "../components/RecipeViewer";
 import {getRecipes} from "../services/request";
 import RecipeNavigator from "../components/RecipeNavigator";
+import Wrapper from '../components/Wrapper'
 
 class RecipeApp extends Component {
     constructor(props) {
@@ -29,11 +30,10 @@ class RecipeApp extends Component {
     }
 
     render() {
-        return <div>
-            <div>This is recipe app</div>
+        return <Wrapper>
             <RecipeNavigator recipes={this.state.recipes.map(recipe => recipe.name)} onClick={this.onRecipeSelect}/>
             <RecipeViewer {...this.state.recipes[this.state.seclectedRecipe]}/>
-        </div>
+        </Wrapper>
     }
 }
 
