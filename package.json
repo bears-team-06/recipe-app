@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "cd client && npm install",
     "start": "node index.js",
     "dev": "npm run heroku-postbuild && npm run start",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm run build",
+    "test": "jest",
+    "posttest": "cd client && npm run build && npm test"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +17,14 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "babel-jest": "^23.6.0",
     "jest": "^23.6.0",
     "prettier": "^1.15.3"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/client/",
+      "/node_modules/"
+    ]
   }
 }
