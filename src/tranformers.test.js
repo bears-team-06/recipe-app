@@ -1,5 +1,6 @@
 const mockedData = require('./Mock/Mock')
-import transformRecipeResponse from './transformers'
+const transformRecipeResponse = require('./transformers')
+
 it('transforms recipe object correctly', () => {
     let transformedObject = transformRecipeResponse(mockedData)
     expect(transformedObject).toBeDefined
