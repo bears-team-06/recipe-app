@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "cd client && npm install",
     "start": "node index.js",
     "dev": "npm run heroku-postbuild && npm run start",
-    "heroku-postbuild": "cd client && npm install && npm run build",
-    "test": "jest && cd client && npm install && npm run build && npm test"
+    "heroku-postbuild": "cd client && npm run build",
+    "test": "jest",
+    "posttest": "cd client && npm run build && npm test"
   },
   "author": "",
   "license": "ISC",
