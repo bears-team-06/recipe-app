@@ -1,3 +1,9 @@
-test('adds 1 and 2 to equal 3', () => {
-  expect(1+2).toBe(3);
-});
+import React from 'react'
+import {shallow} from 'enzyme'
+import RecipeViewer from "./RecipeViewer";
+describe('Recipe Viewer', () => {
+    it('matches snapshot', () => {
+        const RecipeViewerWrapper = shallow(<RecipeViewer/>)
+        expect(RecipeViewerWrapper).toMatchSnapshot()
+    })
+})
