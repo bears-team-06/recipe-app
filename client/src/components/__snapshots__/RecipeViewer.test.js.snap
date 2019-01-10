@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Recipe Viewer matches snapshot 1`] = `
+<div>
+  <div
+    className="title"
+  />
+  <div
+    className="instructions"
+  >
+    <h2>
+      Ingredients:
+    </h2>
+    <ul />
+  </div>
+  <div
+    className="instructions"
+  >
+    <h2>
+      Instructions:
+    </h2>
+    <p />
+  </div>
+</div>
+`;
