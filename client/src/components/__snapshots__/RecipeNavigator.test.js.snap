@@ -17,13 +17,13 @@ exports[`Recipe Navigator matches snapshot 1`] = `
   className="c0"
 >
   <li
-    className="c1"
+    className="recipeItem-0 c1"
     onClick={[Function]}
   >
     recipe1
   </li>
   <li
-    className="c1"
+    className="recipeItem-1 c1"
     onClick={[Function]}
   >
     recipe2
