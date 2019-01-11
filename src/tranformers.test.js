@@ -3,6 +3,6 @@ const transformRecipeResponse = require('./transformers');
 
 it('transforms recipe object correctly', () => {
   const transformedObject = transformRecipeResponse(mockedData);
-  expect(transformedObject).toBeDefined;
+  expect(transformedObject).toBeDefined();
   expect(transformedObject).toMatchSnapshot();
 });
