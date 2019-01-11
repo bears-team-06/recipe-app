@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wrapper matches snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  max-width: 80%;
+  margin-left: 10%;
+  padding: 24px;
+  border: black solid 3px;
+  border-radius: 25px;
+}
+
+<div
+  className="c0"
+/>
+`;
