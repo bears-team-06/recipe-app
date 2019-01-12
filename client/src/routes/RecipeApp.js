@@ -3,6 +3,7 @@ import RecipeViewer from "../components/RecipeViewer";
 import {getRecipes} from "../services/request";
 import RecipeNavigator from "../components/RecipeNavigator";
 import Wrapper from '../components/Wrapper'
+import {validate} from "../services/response";
 
 class RecipeApp extends Component {
     constructor(props) {
@@ -15,12 +16,14 @@ class RecipeApp extends Component {
 
     componentDidMount() {
         getRecipes()
+            .then(validate)
             .then((recipes) => {
                 this.setState({
                     recipes,
                     seclectedRecipe: 3
                 })
             })
+            .catch(err => console.error(err)) // we should probably show an error state on the screen when it fails
     }
 
     onRecipeSelect = (index) => {

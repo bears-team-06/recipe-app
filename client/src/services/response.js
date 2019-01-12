@@ -1,4 +1,4 @@
-const digestResponse = (response) => {
+const validate = (response) => {
     const validateResponse = (recipes) => {
         return new Promise((resolve, reject) => {
             if (Array.isArray(recipes)) {
@@ -16,5 +16,5 @@ const digestResponse = (response) => {
 }
 
 export {
-    digestResponse
+    validate
 }
