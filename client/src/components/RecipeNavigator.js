@@ -16,9 +16,12 @@ const StyledRecipeListItem = styled.li`
 
 const RecipeNavigator = (props) => {
     return (
+        <div>
         <List>
             <RecipeList recipes={props.recipes} onClick={props.onClick}/>
         </List>
+            {props.children}
+        </div>
     )
 }
 

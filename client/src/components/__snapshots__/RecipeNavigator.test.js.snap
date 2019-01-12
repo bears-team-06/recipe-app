@@ -13,20 +13,58 @@ exports[`Recipe Navigator matches snapshot 1`] = `
   margin: 10px;
 }
 
-<ul
-  className="c0"
->
-  <li
-    className="recipeItem-0 c1"
-    onClick={[Function]}
+<div>
+  <ul
+    className="c0"
   >
-    recipe1
-  </li>
-  <li
-    className="recipeItem-1 c1"
-    onClick={[Function]}
+    <li
+      className="recipeItem-0 c1"
+      onClick={[Function]}
+    >
+      recipe1
+    </li>
+    <li
+      className="recipeItem-1 c1"
+      onClick={[Function]}
+    >
+      recipe2
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Recipe Navigator matches snapshot when child elements are passed 1`] = `
+.c1 {
+  font-size: 20px;
+  list-style: none;
+  padding: 5px;
+  white-space: nowrap;
+}
+
+.c0 {
+  width: auto;
+  margin: 10px;
+}
+
+<div>
+  <ul
+    className="c0"
   >
-    recipe2
-  </li>
-</ul>
+    <li
+      className="recipeItem-0 c1"
+      onClick={[Function]}
+    >
+      recipe1
+    </li>
+    <li
+      className="recipeItem-1 c1"
+      onClick={[Function]}
+    >
+      recipe2
+    </li>
+  </ul>
+  <h1>
+    child element
+  </h1>
+</div>
 `;
