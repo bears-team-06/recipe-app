@@ -1,17 +1,13 @@
-import {digestResponse} from "./response";
-
 const getRecipes = () => {
-    return fetch('/api/recipes')
-        .then(response => {
-            if (response.status !== 200) {
-                throw new Error('Looks like there was a problem. Status Code: ' +
-                    response.status);
-            }
-            return digestResponse(response)
-        })
-        .catch(err => console.error('Fetching issue', err))
-}
+  return fetch("/api/recipes")
+    .then(response => {
+      if (response.status !== 200) {
+        throw new Error(
+          "Looks like there was a problem. Status Code:" + response.status
+        );
+      }
+      return Promise.resolve(response);
+    })
+};
 
-export {
-    getRecipes
-}
+export { getRecipes };
