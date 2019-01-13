@@ -3,7 +3,12 @@
     "plugins": [
         "react"
     ],
+    "rules": {
+        "quotes": [ "error", "double" ],
+        "consistent-return": "off"
+    },
     "env": {
-        "jest": true
+        "jest": true,
+        "node": true
     }
 }

@@ -1,28 +1,50 @@
-const transformRecipeResponse = require("./src/transformers");
+const path = require("path");
+const express = require("express");
+const bodyParser = require("body-parser");
 
-const express = require('express')
-const path = require('path')
-const app = express()
-const mockedRecipes = require('./src/Mock/Mock')
+const app = express();
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-app.get('/api/recipe', async (req, res, next) => {
-    res.send("Hello world!")
-})
+const Recipe = require("./src/schema/recipeSchema");
 
+require("./src/dbStarter");
+
+app.post("/api/recipe", async (req, res) => {
+  const newRecipe = new Recipe(req.body);
+  newRecipe.save((err, createdRecipe) => {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send(createdRecipe);
+    }
+  });
+});
+
+
+// get a recipe // Get
+// edit a recipe // PUT
+// delete a recipe // DELETE
 
 // Serve static files from the React frontend app
-app.use(express.static(path.join(__dirname, 'client/build')))
+app.use(express.static(path.join(__dirname, "client/build")));
 
 app.get("/api/recipes", (req, res) => {
-    res.send(transformRecipeResponse(mockedRecipes))
-})
+  Recipe.find({}, (err, docs) => {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send(docs);
+    }
+  });
+});
 
 // Anything that doesn't match the above, send back index.html
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/client/build/index.html'))
-})
+app.get("*", (req, res) => {
+  res.sendFile(path.join(`${__dirname}/client/build/index.html`));
+});
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-    console.log(`Serving it up on port ${PORT}`)
-})
+  console.log(`Serving it up on port ${PORT}`);
+});
