@@ -1,16 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Recipe Navigator matches snapshot 1`] = `
+.c0 {
+  width: 400px;
+  height: 95vh;
+  padding: 20px;
+  margin-top: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
 .c1 {
   font-size: 20px;
   list-style: none;
   padding: 5px;
-  white-space: nowrap;
+  border-bottom: 1px solid;
+  max-height: 100vh;
 }
 
-.c0 {
-  width: auto;
-  margin: 10px;
+.c2 {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
 }
 
 <div>
@@ -30,20 +44,37 @@ exports[`Recipe Navigator matches snapshot 1`] = `
       recipe2
     </li>
   </ul>
+  <div
+    className="c2"
+  />
 </div>
 `;
 
 exports[`Recipe Navigator matches snapshot when child elements are passed 1`] = `
+.c0 {
+  width: 400px;
+  height: 95vh;
+  padding: 20px;
+  margin-top: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
 .c1 {
   font-size: 20px;
   list-style: none;
   padding: 5px;
-  white-space: nowrap;
+  border-bottom: 1px solid;
+  max-height: 100vh;
 }
 
-.c0 {
-  width: auto;
-  margin: 10px;
+.c2 {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
 }
 
 <div>
@@ -63,8 +94,12 @@ exports[`Recipe Navigator matches snapshot when child elements are passed 1`] = 
       recipe2
     </li>
   </ul>
-  <h1>
-    child element
-  </h1>
+  <div
+    className="c2"
+  >
+    <h1>
+      child element
+    </h1>
+  </div>
 </div>
 `;
