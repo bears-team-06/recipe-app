@@ -11,6 +11,17 @@ describe("Recipe Navigator", () => {
     expect(RecipeNavigatorWrapper).toMatchSnapshot();
   });
 
+  it("matches snapshot when child elements are passed", () => {
+    const RecipeNavigatorWrapper = renderer
+      .create(
+        <RecipeNavigator recipes={["recipe1", "recipe2"]}>
+          <h1>child element</h1>
+        </RecipeNavigator>
+      )
+      .toJSON();
+    expect(RecipeNavigatorWrapper).toMatchSnapshot();
+  });
+
   it("returns index of recipe that was clicked", () => {
     const clickHandlerSpy = jest.fn();
     const RecipeNavigatorWrapper = mount(
