@@ -49,7 +49,10 @@ class RecipeApp extends Component {
     render() {
         return <Wrapper>
             {this.ModalRenderer(this.state.showModal)}
-            <RecipeNavigator recipes={this.state.recipes.map(recipe => recipe.name)} onClick={this.onRecipeSelect}>
+            <RecipeNavigator 
+                recipes={this.state.recipes.map(recipe => recipe.name)} 
+                onClick={this.onRecipeSelect}
+                seclectedRecipe={this.state.seclectedRecipe}>
                 <AddRecipeButton onClick={this.toggleModal} />
             </RecipeNavigator>
             <RecipeViewer {...this.state.recipes[this.state.seclectedRecipe]}/>

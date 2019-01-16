@@ -32,13 +32,13 @@ exports[`Recipe Navigator matches snapshot 1`] = `
     className="c0"
   >
     <li
-      className="recipeItem-0 c1"
+      className="recipeItem-0  c1"
       onClick={[Function]}
     >
       recipe1
     </li>
     <li
-      className="recipeItem-1 c1"
+      className="recipeItem-1  c1"
       onClick={[Function]}
     >
       recipe2
@@ -82,13 +82,13 @@ exports[`Recipe Navigator matches snapshot when child elements are passed 1`] = 
     className="c0"
   >
     <li
-      className="recipeItem-0 c1"
+      className="recipeItem-0  c1"
       onClick={[Function]}
     >
       recipe1
     </li>
     <li
-      className="recipeItem-1 c1"
+      className="recipeItem-1  c1"
       onClick={[Function]}
     >
       recipe2

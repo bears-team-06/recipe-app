@@ -21,7 +21,7 @@ const RecipeBody = styled.div`
   padding: 20px;
 `;
 
-const RecipeViewer = ({ id, ingredients, instructions, name }) => {
+const RecipeViewer = ({ ingredients, instructions, name }) => {
   return (
     <StyledRecipeViewer>
       <Title>{name}</Title>

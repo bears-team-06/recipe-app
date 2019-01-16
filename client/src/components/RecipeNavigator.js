@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const RecipeList = ({ recipes, onClick }) => {
+const RecipeList = ({ recipes, onClick, seclectedRecipe }) => {
     if (recipes && Array.isArray(recipes)) {
-        return recipes.map((recipe,index) => <StyledRecipeListItem className={`recipeItem-${index}`} key={recipe.replace(" ","")} onClick={() => onClick(index)}>{recipe}</StyledRecipeListItem>);
+        return recipes.map((recipe,index) => <StyledRecipeListItem className={`recipeItem-${index} ${(index===seclectedRecipe ? 'selected-recipe' : '')}`} key={recipe.replace(" ","")} onClick={() => onClick(index)}>{recipe}</StyledRecipeListItem>);
     }
 }
 
@@ -23,6 +23,13 @@ const StyledRecipeListItem = styled.li`
   padding: 5px;
   border-bottom: 1px solid ${props => props.theme.textColor};
   max-height: 100vh;
+
+  &:hover {
+    background: ${props => props.theme.secondaryLight}
+  }
+  &.selected-recipe {
+      background: ${props => props.theme.secondary}
+  }
 `;
 const AddButtonWrapper = styled.div`
     position: fixed;
@@ -34,7 +41,7 @@ const RecipeNavigator = (props) => {
     return (
         <div>
         <List>
-            <RecipeList recipes={props.recipes} onClick={props.onClick}/>
+            <RecipeList recipes={props.recipes} onClick={props.onClick} seclectedRecipe={props.seclectedRecipe} />
             
         </List>
         <AddButtonWrapper>
