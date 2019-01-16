@@ -14,7 +14,7 @@ describe("Add Recipe Button", () => {
   it("calls prop onClick when clicked", () => {
     const onClickSpy = jest.fn();
     const RecipeButtonWrapper = mount(<AddRecipeButton onClick={onClickSpy} />);
-    RecipeButtonWrapper.find("button").simulate("click");
+    RecipeButtonWrapper.find("svg").simulate("click");
     expect(onClickSpy).toHaveBeenCalledTimes(1);
   });
 });

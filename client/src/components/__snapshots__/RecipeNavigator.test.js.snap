@@ -2,7 +2,7 @@
 
 exports[`Recipe Navigator matches snapshot 1`] = `
 .c0 {
-  width: 400px;
+  width: 25vw;
   height: 95vh;
   padding: 20px;
   margin-top: 0;
@@ -18,13 +18,12 @@ exports[`Recipe Navigator matches snapshot 1`] = `
   list-style: none;
   padding: 5px;
   border-bottom: 1px solid;
-  max-height: 100vh;
 }
 
 .c2 {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  bottom: 30px;
+  left: 23vw;
 }
 
 <div>
@@ -52,7 +51,7 @@ exports[`Recipe Navigator matches snapshot 1`] = `
 
 exports[`Recipe Navigator matches snapshot when child elements are passed 1`] = `
 .c0 {
-  width: 400px;
+  width: 25vw;
   height: 95vh;
   padding: 20px;
   margin-top: 0;
@@ -68,13 +67,12 @@ exports[`Recipe Navigator matches snapshot when child elements are passed 1`] = 
   list-style: none;
   padding: 5px;
   border-bottom: 1px solid;
-  max-height: 100vh;
 }
 
 .c2 {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  bottom: 30px;
+  left: 23vw;
 }
 
 <div>

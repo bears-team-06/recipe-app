@@ -8,7 +8,7 @@ const RecipeList = ({ recipes, onClick, seclectedRecipe }) => {
 }
 
 const List = styled.ul`
-  width: 400px;
+  width: 25vw;
   height: 95vh;
   padding: 20px;
   margin-top: 0;
@@ -22,8 +22,7 @@ const StyledRecipeListItem = styled.li`
   list-style: none;
   padding: 5px;
   border-bottom: 1px solid ${props => props.theme.textColor};
-  max-height: 100vh;
-
+  
   &:hover {
     background: ${props => props.theme.secondaryLight}
   }
@@ -33,21 +32,19 @@ const StyledRecipeListItem = styled.li`
 `;
 const AddButtonWrapper = styled.div`
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: 30px;
+    left: 23vw;
 `;
 
 const RecipeNavigator = (props) => {
     return (
         <div>
-        <List>
-            <RecipeList recipes={props.recipes} onClick={props.onClick} seclectedRecipe={props.seclectedRecipe} />
-            
-        </List>
-        <AddButtonWrapper>
-            {props.children}
-        </AddButtonWrapper>
-            
+            <List>
+                <RecipeList recipes={props.recipes} onClick={props.onClick} seclectedRecipe={props.seclectedRecipe} />
+            </List>
+            <AddButtonWrapper>
+                {props.children}
+            </AddButtonWrapper>
         </div>
     )
 }
