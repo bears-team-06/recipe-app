@@ -10,7 +10,7 @@ const Recipe = require("./src/schema/recipeSchema");
 
 require("./src/dbStarter");
 
-app.post("/api/recipe", async (req, res) => {
+app.post("/api/recipe", (req, res) => {
   const newRecipe = new Recipe(req.body);
   newRecipe.save((err, createdRecipe) => {
     if (err) {
@@ -21,10 +21,22 @@ app.post("/api/recipe", async (req, res) => {
   });
 });
 
+app.delete("/api/recipe/:id", (req, res) => {
+  if (!req.params.id.match(/^[0-9a-fA-F]{24}$/)) {
+    res.send("Invalid id");
+  } else {
+    Recipe.findByIdAndRemove(req.params.id, (err, document) => {
+      if (err) {
+        res.send(err);
+      } else {
+        res.send(document);
+      }
+    });
+  }
+});
 
 // get a recipe // Get
 // edit a recipe // PUT
-// delete a recipe // DELETE
 
 // Serve static files from the React frontend app
 app.use(express.static(path.join(__dirname, "client/build")));
