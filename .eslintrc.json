@@ -1,9 +1,13 @@
 {
-    "extends": "airbnb",
-    "plugins": [
-        "react"
-    ],
-    "env": {
-        "jest": true
-    }
+  "extends": "airbnb",
+  "plugins": ["react"],
+  "rules": {
+    "quotes": ["error", "double"],
+    "consistent-return": "off",
+    "comma-dangle": "off"
+  },
+  "env": {
+    "jest": true,
+    "node": true
+  }
 }
