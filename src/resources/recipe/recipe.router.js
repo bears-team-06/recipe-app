@@ -4,12 +4,15 @@ const {
   getAll,
   createOne,
   deleteOne,
-  updateOne
+  updateOne,
+  validateRequestWithID
 } = require("./recipe.controller");
 
 recipeRouter.route("/recipe").post(createOne);
 
 recipeRouter.route("/recipes").get(getAll);
+
+recipeRouter.use("/recipe/:id", validateRequestWithID)
 
 recipeRouter
   .route("/recipe/:id")
