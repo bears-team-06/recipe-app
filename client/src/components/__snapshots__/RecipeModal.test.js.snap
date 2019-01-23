@@ -1,29 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Recipe Modal matches snapshot 1`] = `
-<div>
-  <div>
-    <input
-      placeholder="Enter Recipe Name"
-      type="text"
-    />
-  </div>
-  <div>
-    <input
-      placeholder="Enter ingredients"
-      type="textarea"
-    />
-  </div>
-  <div>
-    <input
-      placeholder="Enter instructions"
-      type="textarea"
-    />
-  </div>
-  <div>
-    <button>
-      Close
-    </button>
-  </div>
-</div>
+<styled.div>
+  <styled.input
+    placeholder="Enter Recipe Name"
+    type="text"
+  />
+  <styled.textarea
+    placeholder="Enter Ingredients"
+    type="text"
+  />
+  <styled.textarea
+    placeholder="Enter Instructions"
+    rows="50"
+    type="text"
+  />
+  <styled.button>
+    Close
+  </styled.button>
+</styled.div>
 `;

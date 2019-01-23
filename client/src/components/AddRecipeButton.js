@@ -15,7 +15,7 @@ const Button = styled(FontAwesomeIcon)`
   background: ${props => props.theme.textColor};
   border-radius: 50%;
   border: none;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
+  box-shadow: ${props => props.theme.shadow}; 
   &:hover {
     color: ${props => props.theme.secondaryLight};
   }

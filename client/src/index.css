@@ -14,7 +14,7 @@ code {
 }
 
 #modal {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
   left: 0;
   right: 0;
@@ -32,8 +32,15 @@ code {
 
 #modal > div {
   background-color: white;
-  max-width: 500px;
+  width: 40vw;
+  height: 75vh;
   padding: 15px;
   border-radius: 5px;
   text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  #modal > div {
+    width: 85vw;
+  }
 }
