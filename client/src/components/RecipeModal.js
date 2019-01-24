@@ -12,6 +12,8 @@ const RecipeModalWrapper = styled.div`
 const RecipeModalInput = styled.input`
     width: 90%; 
     padding: 10px;
+    font-size: 20px;
+    min-width: 0;
 
     &:focus {
         outline: none;
@@ -19,9 +21,10 @@ const RecipeModalInput = styled.input`
     }
 `;
 const RecipeModalTextArea = styled.textarea`
-    height: 100px;
+    height: 150px;
     width: 90%; 
     padding: 10px;
+    font-size: 20px;
 
     &:focus {
         outline: none;
