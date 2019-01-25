@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import styled from 'styled-components';
 
 const RecipeModalWrapper = styled.div`
@@ -38,21 +38,50 @@ const RecipeModalButton = styled.button`
     border: none;
     box-shadow: ${props => props.theme.shadow};
     border-radius: 5px;
+    width: 20%;
     
     &:hover {
         background: ${props => props.theme.secondary};
     }
 `;
 
-const RecipeModal = (props) => {
-    return (
+const ButtonHolder = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+`
+
+class RecipeModal extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        name: "",
+        ingredients: "",
+        instructions: ""
+      }
+    }
+
+    handleInputChange = (e) => {
+      this.setState({ [e.target.name]: e.target.value });
+    }
+
+    onAddButtonClick = () => {
+      this.props.onAddRecipeClick(this.state.name, this.state.ingredients, this.state.instructions)
+    }
+
+    render() {
+      return (
         <RecipeModalWrapper>
-            <RecipeModalInput type={"text"} placeholder={"Enter Recipe Name"} />
-            <RecipeModalTextArea type={"text"} placeholder={"Enter Ingredients"} />
-            <RecipeModalTextArea type={"text"} rows="50" placeholder={"Enter Instructions"} />
-            <RecipeModalButton onClick={props.closeModal}>Close</RecipeModalButton>
+          <RecipeModalInput name={"name"} type={"text"} placeholder={"Enter Recipe Name"} onChange={this.handleInputChange} value={this.state.name}/>
+          <RecipeModalTextArea name={"ingredients"} type={"text"} placeholder={"Enter Ingredients"} onChange={this.handleInputChange} value={this.state.ingredients}/>
+          <RecipeModalTextArea name={"instructions"} type={"text"} rows="50" placeholder={"Enter Instructions"} onChange={this.handleInputChange} value={this.state.instructions}/>
+          <ButtonHolder>
+            <RecipeModalButton onClick={this.onAddButtonClick}>Add</RecipeModalButton>
+            <RecipeModalButton id="closeButton" onClick={this.props.closeModal}>Cancel</RecipeModalButton>
+          </ButtonHolder>
         </RecipeModalWrapper>
-    )
+      )
+    }
 }
 
 export default RecipeModal

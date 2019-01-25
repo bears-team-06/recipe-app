@@ -1,5 +1,6 @@
 import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
+import DeleteRecipeButton from "./DeleteRecipeButton";
 
 const StyledRecipeViewer = styled.div`
   margin-left: : 400px;
@@ -15,23 +16,41 @@ const Title = styled.div`
   background: ${props => props.theme.secondary};
   padding-top: 20px;
   text-align: center;
-  font-size: 24px;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-around;
 `;
 const RecipeBody = styled.div`
   padding: 20px;
 `;
 
-const RecipeViewer = ({ ingredients, instructions, name }) => {
+const RecipeViewer = ({
+  id,
+  _id,
+  ingredients,
+  instructions,
+  name,
+  onDeleteClick
+}) => {
   return (
     <StyledRecipeViewer>
-      <Title>{name}</Title>
+      <Title>
+        <span>
+          <DeleteRecipeButton
+            onClick={() => {
+              onDeleteClick(_id);
+            }}
+          />
+        </span>
+        <span>{name}</span>
+      </Title>
       <RecipeBody>
         <div className={"instructions"}>
           <h2>Ingredients:</h2>
           <ul>{IngredientLists(ingredients)}</ul>
         </div>
         <div className={"instructions"}>
-            <h2>Instructions:</h2>
+          <h2>Instructions:</h2>
           <p>{instructions}</p>
         </div>
       </RecipeBody>
@@ -41,7 +60,9 @@ const RecipeViewer = ({ ingredients, instructions, name }) => {
 
 const IngredientLists = ingredients => {
   if (ingredients && Array.isArray(ingredients)) {
-    return ingredients.map(ingredient => <li key={ingredient.replace(" ","")}>{ingredient}</li>);
+    return ingredients.map(ingredient => (
+      <li key={ingredient.replace(" ", "")}>{ingredient}</li>
+    ));
   }
 };
 

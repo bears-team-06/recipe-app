@@ -3,20 +3,38 @@
 exports[`Recipe Modal matches snapshot 1`] = `
 <styled.div>
   <styled.input
+    name="name"
+    onChange={[Function]}
     placeholder="Enter Recipe Name"
     type="text"
+    value=""
   />
   <styled.textarea
+    name="ingredients"
+    onChange={[Function]}
     placeholder="Enter Ingredients"
     type="text"
+    value=""
   />
   <styled.textarea
+    name="instructions"
+    onChange={[Function]}
     placeholder="Enter Instructions"
     rows="50"
     type="text"
+    value=""
   />
-  <styled.button>
-    Close
-  </styled.button>
+  <styled.div>
+    <styled.button
+      onClick={[Function]}
+    >
+      Add
+    </styled.button>
+    <styled.button
+      id="closeButton"
+    >
+      Cancel
+    </styled.button>
+  </styled.div>
 </styled.div>
 `;

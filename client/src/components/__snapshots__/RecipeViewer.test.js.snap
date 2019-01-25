@@ -2,7 +2,14 @@
 
 exports[`Recipe Viewer matches snapshot 1`] = `
 <styled.div>
-  <styled.div />
+  <styled.div>
+    <span>
+      <DeleteRecipeButton
+        onClick={[Function]}
+      />
+    </span>
+    <span />
+  </styled.div>
   <styled.div>
     <div
       className="instructions"

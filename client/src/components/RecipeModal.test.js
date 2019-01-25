@@ -11,7 +11,7 @@ describe("Recipe Modal", () => {
   it("calls callback on clicking button", () => {
       const closeModalSpy = jest.fn()
       const RecipeModalWrapper = mount(<RecipeModal closeModal={closeModalSpy}/>)
-      RecipeModalWrapper.find('button').simulate('click')
+      RecipeModalWrapper.find('button#closeButton').simulate('click')
       expect(closeModalSpy).toHaveBeenCalledTimes(1)
   });
 });
