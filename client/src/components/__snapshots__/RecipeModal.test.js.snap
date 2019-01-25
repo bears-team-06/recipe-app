@@ -2,6 +2,7 @@
 
 exports[`Recipe Modal matches snapshot 1`] = `
 <styled.div>
+  <styled.h1 />
   <styled.input
     name="name"
     onChange={[Function]}

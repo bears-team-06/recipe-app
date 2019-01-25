@@ -3,7 +3,6 @@ import styled from "styled-components";
 import DeleteRecipeButton from "./DeleteRecipeButton";
 
 const StyledRecipeViewer = styled.div`
-  margin-left: : 400px;
   background: ${props => props.theme.secondaryLight};
   width: 100%;
   flex-grow: 2;
@@ -11,18 +10,26 @@ const StyledRecipeViewer = styled.div`
   overflow-y: scroll;
   color: ${props => props.theme.textColor};
 `;
-const Title = styled.div`
-  height: 50px;
+const TitleBar = styled.div`
+  height: 10%;
   background: ${props => props.theme.secondary};
-  padding-top: 20px;
+  padding-left: 1%;
   text-align: center;
-  font-size: 40px;
+  font-size: 3vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
 `;
 const RecipeBody = styled.div`
   padding: 20px;
 `;
+
+const RecipeTitle = styled.h2`
+    display: inline-block;
+    margin: 0;
+    padding-left: 5%;
+    font-size: 3vw;
+`
 
 const RecipeViewer = ({
   id,
@@ -34,16 +41,14 @@ const RecipeViewer = ({
 }) => {
   return (
     <StyledRecipeViewer>
-      <Title>
-        <span>
+      <TitleBar>
           <DeleteRecipeButton
             onClick={() => {
               onDeleteClick(_id);
             }}
           />
-        </span>
-        <span>{name}</span>
-      </Title>
+        <RecipeTitle>{name}</RecipeTitle>
+      </TitleBar>
       <RecipeBody>
         <div className={"instructions"}>
           <h2>Ingredients:</h2>

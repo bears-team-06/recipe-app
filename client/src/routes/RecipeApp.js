@@ -51,7 +51,7 @@ class RecipeApp extends Component {
     if (showModal) {
       return (
         <Modal>
-          <RecipeModal closeModal={this.toggleModal} onAddRecipeClick={this.addRecipe}/>
+          <RecipeModal title="Add Recipe" closeModal={this.toggleModal} onAddRecipeClick={this.addRecipe}/>
         </Modal>
       );
     }

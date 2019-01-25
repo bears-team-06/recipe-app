@@ -11,18 +11,21 @@ const RecipeModalWrapper = styled.div`
 
 const RecipeModalInput = styled.input`
     width: 90%; 
-    padding: 10px;
-
+    padding: 2%;
+    font-size: 2vh;
+    border: 1px solid gray;
+    font-family: ${props =>  props.theme.font};
     &:focus {
         outline: none;
         border: 1px solid ${props => props.theme.secondaryLight};
     }
 `;
 const RecipeModalTextArea = styled.textarea`
-    height: 100px;
+    height: 25%;
     width: 90%; 
-    padding: 10px;
-
+    padding: 2%;
+    font-size: 2vh;
+    border: 1px solid gray;
     &:focus {
         outline: none;
         border: 1px solid ${props => props.theme.secondaryLight};
@@ -31,10 +34,10 @@ const RecipeModalTextArea = styled.textarea`
 `;
 
 const RecipeModalButton = styled.button`
-    padding: 10px;
+    padding: 2%;
     background: ${props => props.theme.secondaryLight};
     color: ${props => props.theme.textColor};
-    font-size: 24px;
+    font-size: 2vw;
     border: none;
     box-shadow: ${props => props.theme.shadow};
     border-radius: 5px;
@@ -49,6 +52,10 @@ const ButtonHolder = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-around;
+`
+
+const Title = styled.h1`
+    
 `
 
 class RecipeModal extends Component {
@@ -72,6 +79,7 @@ class RecipeModal extends Component {
     render() {
       return (
         <RecipeModalWrapper>
+          <Title>{this.props.title}</Title>
           <RecipeModalInput name={"name"} type={"text"} placeholder={"Enter Recipe Name"} onChange={this.handleInputChange} value={this.state.name}/>
           <RecipeModalTextArea name={"ingredients"} type={"text"} placeholder={"Enter Ingredients"} onChange={this.handleInputChange} value={this.state.ingredients}/>
           <RecipeModalTextArea name={"instructions"} type={"text"} rows="50" placeholder={"Enter Instructions"} onChange={this.handleInputChange} value={this.state.instructions}/>
