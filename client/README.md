@@ -1,4 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Recipe App
+This is client side implementation of react app.
+
+Recipe app allows user to collect food recipes online. A user can add or delete recipe with name, ingredients and instructions.
+
+## Packages Used
+1. Create-react-app - Easy for bootstrapping a new react project.
+2. React - for creating single page application.
+3. Styled-components - Styled components helped us bring styling into react components itself. This made it easy for us to read component and it's style in a single file.
+4. React-router-dom - for routing pages based on link.
+5. Jest - to write unit tests
+6. enzyme - for writing snapshot tests.
+7. jest-styled-components - to test styled component changes in the app itself.
+
+## Running Locally
+This app has both client and backend side code. It is possible to run client side individually using proxy in package.json.
+To run this app ```npm start```
 
 ## Available Scripts
 
