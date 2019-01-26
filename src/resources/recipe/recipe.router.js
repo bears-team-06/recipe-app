@@ -12,7 +12,7 @@ recipeRouter.route("/recipe").post(createOne);
 
 recipeRouter.route("/recipes").get(getAll);
 
-recipeRouter.use("/recipe/:id", validateRequestWithID)
+recipeRouter.use("/recipe/:id", validateRequestWithID);
 
 recipeRouter
   .route("/recipe/:id")

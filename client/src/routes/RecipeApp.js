@@ -13,7 +13,7 @@ class RecipeApp extends Component {
     super(props);
     this.state = {
       recipes: [],
-      seclectedRecipe: undefined,
+      selectedRecipe: undefined,
       showModal: false
     };
   }
@@ -30,7 +30,7 @@ class RecipeApp extends Component {
       .then(recipes => {
         this.setState({
           recipes,
-          seclectedRecipe: 3
+          selectedRecipe: 3
         });
       })
       .catch(err => console.error(err)); // we should probably show an error state on the screen when it fails
@@ -38,21 +38,25 @@ class RecipeApp extends Component {
 
   onRecipeSelect = index => {
     this.setState({
-      seclectedRecipe: index
+      selectedRecipe: index
     });
   };
 
   addRecipe = (name, ingredients, instructions) => {
     addRecipe(name, ingredients, instructions)
       .then(() => this.setState({ showModal: false }, this.fetchRecipes))
-      .catch(() => console.log("error should be shown on add recipe modal"))
-  }
+      .catch(() => console.log("error should be shown on add recipe modal"));
+  };
 
   ModalRenderer(showModal) {
     if (showModal) {
       return (
         <Modal>
-          <RecipeModal title="Add Recipe" closeModal={this.toggleModal} onAddRecipeClick={this.addRecipe}/>
+          <RecipeModal
+            title="Add Recipe"
+            closeModal={this.toggleModal}
+            onAddRecipeClick={this.addRecipe}
+          />
         </Modal>
       );
     }
@@ -71,12 +75,12 @@ class RecipeApp extends Component {
         <RecipeNavigator
           recipes={this.state.recipes.map(recipe => recipe.name)}
           onClick={this.onRecipeSelect}
-          seclectedRecipe={this.state.seclectedRecipe}
+          seclectedRecipe={this.state.selectedRecipe}
         >
           <AddRecipeButton onClick={this.toggleModal} />
         </RecipeNavigator>
         <RecipeViewer
-          {...this.state.recipes[this.state.seclectedRecipe]}
+          {...this.state.recipes[this.state.selectedRecipe]}
           onDeleteClick={this.onClickDelete}
         />
       </Wrapper>

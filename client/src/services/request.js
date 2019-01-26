@@ -25,8 +25,8 @@ const deleteRecipe = id => {
 const addRecipe = (name, ingredients, instructions) => {
   return fetch("/api/recipe", {
     headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
+      Accept: "application/json",
+      "Content-Type": "application/json"
     },
     method: "post",
     body: JSON.stringify({ name, ingredients: [ingredients], instructions })
@@ -38,6 +38,6 @@ const addRecipe = (name, ingredients, instructions) => {
     }
     return Promise.resolve(response);
   });
-}
+};
 
 export { getRecipes, deleteRecipe, addRecipe };

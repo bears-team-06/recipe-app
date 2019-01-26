@@ -13,11 +13,13 @@ describe("get recipes", () => {
     expect(fetch).toHaveBeenCalledWith("/api/recipes");
   });
   it("throws an error if status code is not 200", () => {
-      fetch = fetch = jest.fn(
-          () => new Promise(resolve => resolve({ status: 201 }))
-      );
-      expect(getRecipes()).rejects.toThrowError("Looks like there was a problem. Status Code:201")
-      expect(fetch).toHaveBeenCalledTimes(1);
-      expect(fetch).toHaveBeenCalledWith("/api/recipes");
+    fetch = fetch = jest.fn(
+      () => new Promise(resolve => resolve({ status: 201 }))
+    );
+    expect(getRecipes()).rejects.toThrowError(
+      "Looks like there was a problem. Status Code:201"
+    );
+    expect(fetch).toHaveBeenCalledTimes(1);
+    expect(fetch).toHaveBeenCalledWith("/api/recipes");
   });
 });

@@ -25,11 +25,11 @@ const RecipeBody = styled.div`
 `;
 
 const RecipeTitle = styled.h2`
-    display: inline-block;
-    margin: 0;
-    padding-left: 5%;
-    font-size: 3vw;
-`
+  display: inline-block;
+  margin: 0;
+  padding-left: 5%;
+  font-size: 3vw;
+`;
 
 const RecipeViewer = ({
   id,
@@ -42,11 +42,11 @@ const RecipeViewer = ({
   return (
     <StyledRecipeViewer>
       <TitleBar>
-          <DeleteRecipeButton
-            onClick={() => {
-              onDeleteClick(_id);
-            }}
-          />
+        <DeleteRecipeButton
+          onClick={() => {
+            onDeleteClick(_id);
+          }}
+        />
         <RecipeTitle>{name}</RecipeTitle>
       </TitleBar>
       <RecipeBody>

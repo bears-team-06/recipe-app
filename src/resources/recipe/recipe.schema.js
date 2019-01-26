@@ -12,7 +12,7 @@ const recipeSchema = new Schema({
   instructions: {
     type: String,
     required: true
-  },
+  }
 });
 
 const Recipe = model("Recipe", recipeSchema, "Recipe");
