@@ -44,6 +44,7 @@ class RecipeApp extends Component {
 
   addRecipe = (name, ingredients, instructions) => {
     addRecipe(name, ingredients, instructions)
+      .then(() => this.setState({ showModal: false }, this.fetchRecipes))
       .catch(() => console.log("error should be shown on add recipe modal"))
   }
 

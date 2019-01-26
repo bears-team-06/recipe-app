@@ -55,13 +55,20 @@ const ButtonHolder = styled.div`
 `
 
 const Title = styled.h1`
-    
+    margin: 0;
+`
+
+const ErrorContainer = styled.div`
+    font-size: 1.5vw;
+    color: red;
+    text-align: left;
 `
 
 class RecipeModal extends Component {
     constructor(props) {
       super(props);
       this.state = {
+        errors: [],
         name: "",
         ingredients: "",
         instructions: ""
@@ -73,14 +80,32 @@ class RecipeModal extends Component {
     }
 
     onAddButtonClick = () => {
-      //TODO: show validation errors
-      this.props.onAddRecipeClick(this.state.name, this.state.ingredients, this.state.instructions)
+      if(this.errors.length !== 0) {
+        this.setState({errors: this.errors})
+      } else {
+        this.props.onAddRecipeClick(this.state.name, this.state.ingredients, this.state.instructions)
+      }
+    }
+
+    get errors() {
+      const errors = []
+      if(this.state.name === "") {
+        errors.push("Please enter a name");
+      }
+      if(this.state.ingredients === "") {
+        errors.push("Please enter ingredients");
+      }
+      if(this.state.instructions === "") {
+        errors.push("Please enter ingredients");
+      }
+      return errors;
     }
 
     render() {
       return (
         <RecipeModalWrapper>
           <Title>{this.props.title}</Title>
+          <ErrorContainer><ul>{this.state.errors.map(error => <li>{error}</li>)}</ul></ErrorContainer>
           <RecipeModalInput name={"name"} type={"text"} placeholder={"Enter Recipe Name"} onChange={this.handleInputChange} value={this.state.name}/>
           <RecipeModalTextArea name={"ingredients"} type={"text"} placeholder={"Enter Ingredients"} onChange={this.handleInputChange} value={this.state.ingredients}/>
           <RecipeModalTextArea name={"instructions"} type={"text"} rows="50" placeholder={"Enter Instructions"} onChange={this.handleInputChange} value={this.state.instructions}/>
