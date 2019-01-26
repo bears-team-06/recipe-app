@@ -73,6 +73,7 @@ class RecipeModal extends Component {
     }
 
     onAddButtonClick = () => {
+      //TODO: show validation errors
       this.props.onAddRecipeClick(this.state.name, this.state.ingredients, this.state.instructions)
     }
 

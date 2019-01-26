@@ -29,7 +29,7 @@ const addRecipe = (name, ingredients, instructions) => {
       'Content-Type': 'application/json'
     },
     method: "post",
-    body: JSON.stringify({ name, ingredients, instructions })
+    body: JSON.stringify({ name, ingredients: [ingredients], instructions })
   }).then(response => {
     if (response.status !== 200) {
       throw new Error(

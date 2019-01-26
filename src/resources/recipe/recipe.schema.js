@@ -1,9 +1,18 @@
 const { Schema, model } = require("mongoose");
 
 const recipeSchema = new Schema({
-  name: String,
-  ingredients: String,
-  instructions: String,
+  name: {
+    type: String,
+    required: true
+  },
+  ingredients: {
+    type: [String],
+    required: true
+  },
+  instructions: {
+    type: String,
+    required: true
+  },
 });
 
 const Recipe = model("Recipe", recipeSchema, "Recipe");
